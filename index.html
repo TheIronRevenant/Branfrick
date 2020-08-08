@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        textarea {
+            resize: none;
+        }
+
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            width: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <textarea id="CodeInput" cols="80" rows="40" wrap="soft"></textarea>
+        <textarea disabled id="CodeOutput" cols="80" rows="40" wrap="soft"></textarea>
+    </div>
+    <div>
+        <button id="InputButton">Parse</button>
+        <button id="FileInput">Load From File</button>
+        <input id="FilePicker" type="file" accept="text/bf"></input>
+    </div>
+    <table id="Tape">
+        <tr>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>0</td>
+        </tr>
+    </table>
+    <script src="branfrick.js"></script>
+</body>
